@@ -1,0 +1,279 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+    margin: auto;
+    /* background-color: aquamarine; */
+}
+.logo{
+    display: flex;
+   flex: 1;
+   align-items: center;
+   justify-content: flex-start;
+   
+
+}
+.logo h4{
+    font-size: 22px;
+}
+
+.logo img{
+   
+   width: 6vh;
+   margin: 0px 5px;
+}
+nav{
+    display: flex;
+    flex: 3;
+
+}
+nav ul{
+    display: flex;
+    
+    justify-content: center;
+    list-style: none;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    color:dimgray;
+    
+    padding: 0px 35px;
+    
+}
+nav ul li a:hover{
+    color:rgb(0, 0, 0);
+    background: 2px solid green;
+}
+
+.cart-log {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+   
+}
+.cart-logo img{
+    width: 3vh;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    align-items: center;
+}
+
+.intoduction{
+    flex: 1;
+    text-align: justify;
+}
+.intro-text h1{
+   font-size: 44px;
+   padding: 2px 3px;
+   background: linear-gradient(to right,#494964,#6f6f89);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   
+  
+}
+.intro-text p{
+    font-size: 22px;
+    margin-top: 7px;
+    color: #585772;
+}
+.btn-ctr{
+    margin-top: 18px;
+}
+
+#btn-14 {
+    width: 150px;
+    height: 38px;
+    margin: auto;
+    padding: 5px 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: .5vh;
+    color: #c36cbb;
+    background-color: transparent;
+    border: 2px solid #c36cbb;
+
+}
+#btn-14:hover{
+    background-color: #f3e5f2;
+}
+#add-cart{
+    width: 150px;
+    height: 38px;
+    margin: auto;
+    padding: 5px 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: .5vh;
+    color: white;
+    background-color: #c36cbb;
+    border: 2px solid #b971b2;
+
+}
+#add-cart:hover{
+    background-color: #bb59b1;
+
+}
+.cover{
+    flex: 1;
+}
+.cover img{
+    width: 70vh;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+
+#large-circle{
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    height: 90%;
+    opacity: 0.6;
+}
+#medium-circle{
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    z-index: -1;
+    height: 60%;
+    opacity: 0.5;
+}
+#small-circle{
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    z-index: -1;
+    height: 40%;
+}
+
+.laptopSelect{
+    position: absolute;
+    width: 15%;
+
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    cursor: pointer;
+    right: 25%;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+@media screen and (max-width:1024px){
+    .presentation{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .intoduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 38px;
+        
+       
+     }
+    .intro-text p{
+        font-size: 20px;
+        margin-top: 7px;
+        color: #585772;
+    }
+    .btn-ctr{
+        margin-top: 18px;
+    }
+    .btn-ctr{
+       margin-top: 6vh;
+    }
+    #large-circle{
+        height: 90%;
+        opacity: 0.4;
+    }
+    #medium-circle{
+        position: absolute;
+        top: 48%;
+        right: 40%;
+        z-index: -1;
+        height: 60%;
+        opacity: 0.4;
+    }
+    #small-circle{
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        z-index: -1;
+        height: 30%;
+        opacity: 0.4;
+    }
+    .cover img{
+        width: 55vh;
+        filter: drop-shadow(0px 5px 3px black);
+        animation: drop 1.5s ease;
+    }
+    .laptopSelect{
+       
+        bottom: 3%;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%,5%);
+        
+    }
+    
+}
+
+@media screen and (max-width:1500px) and (min-width:1024px){
+    .laptopSelect{
+       
+        bottom: 8%;
+        right: 30%;
+        width: 25%;
+        transform: translate(50%,5%);
+        
+    }
+
+}
+
+@media screen and (max-width:2200px) and (min-width:1500px){
+    .laptopSelect{
+       
+        bottom: 8%;
+        right: 32%;
+        width: 20%;
+        transform: translate(50%,5%);
+        
+    }
+
+}
